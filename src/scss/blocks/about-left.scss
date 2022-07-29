@@ -1,0 +1,115 @@
+.about-left--backgound{
+    background-color: $light-grey;
+}
+
+.about-left{
+    display: flex;
+    align-items: center;
+    padding: 76px 0 144px 0 !important;
+    box-sizing: border-box;
+
+    .about-left__img{
+
+        img{
+            width: 800px;
+        }
+    }
+
+    .about-left__info{
+        box-sizing: border-box;
+        padding-left: 80px;
+        max-width: 600px;
+
+        p{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 31px;
+        line-height: 41px;
+        }
+
+        .about-left__title {
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 67px;
+        }
+    }
+
+    .about-left__wrap{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 110px;
+        flex-direction: row;
+        justify-content: center;
+        
+
+        p{
+            font-weight: 400;
+            font-size: 21px;
+            line-height: 28px;
+        }
+
+        svg{
+            width: 30px;
+            height: 30px;
+            margin-right: 25px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-left{
+        padding-right: 30px !important;
+        padding-left: 30px !important;
+
+        .about-left__info{
+            padding-left: 40px;
+            max-width: 400px;
+
+            p{
+                font-size: 23px;
+            }
+        
+            .about-left__title {
+                font-size: 30px;
+                line-height: 50px;
+            }
+        }
+
+        .about-left__wrap{
+            margin-bottom: 60px;
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    .about-left{
+        flex-direction: column;
+        padding-top: 30px!important;
+        padding-bottom: 30px !important;
+
+        .about-left__img{
+
+            img{
+                width: 400px;
+            }
+        }
+
+        .about-left__info{
+            padding-left: 0px;
+            max-width: 600px;
+            margin-top: 30px;
+
+            p{
+                text-align: center;
+                font-size: 20px;
+                line-height: 30px;
+            }
+        
+        }
+
+        .about-left__wrap{
+            display: none;
+        }
+    }
+}

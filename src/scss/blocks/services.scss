@@ -1,0 +1,41 @@
+.services{
+    padding: 20px 0 100px 0;
+
+    .services__block {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .services__element{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            svg{
+                width: 27px;
+                height: 27px;
+                fill: $black;
+                margin-right: 25px;
+            }
+
+            p{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 21px;
+            }
+        }
+    }
+}
+
+@media (max-width: 860px) {
+
+    .services{
+
+        .services__block {
+
+            .services__element{
+                margin-top: 20px;
+            }
+        }
+    }
+}

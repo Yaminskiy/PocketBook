@@ -1,0 +1,42 @@
+@charset 'UTF-8';
+
+@import 'reset';
+@import 'fonts';
+@import 'variables';
+@import 'mixins';
+
+@import 'blocks/top';
+@import 'blocks/buy-section';
+@import 'blocks/services';
+@import 'blocks/about-right';
+@import 'blocks/about-text';
+@import 'blocks/about-left';
+@import 'blocks/characteristics';
+@import 'blocks/offers';
+@import 'blocks/about';
+@import 'blocks/footer-top';
+@import 'blocks/footer-bottom';
+
+body {
+    @include min-max(320px, 100%, 0);
+    font-family: 'Segoe WP', sans-serif;
+    font-weight: 400;
+    font-size: 31px;
+}
+
+.wrap {
+    @include min-max(320px, 1000px, 15px);
+}
+
+.wrap-header {
+    @include min-max(320px, 1300px, 15px);
+}
+
+p {
+    color: $black;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}

@@ -1,0 +1,21 @@
+.about-text{
+    padding: 100px 0 100px 0 !important;
+
+    p{
+        text-align: center;
+        font-weight: 400;
+        font-size: 31px;
+        line-height: 41px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-text{
+        padding: 30px !important;
+    
+        p{
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}
